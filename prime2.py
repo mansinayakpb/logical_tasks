@@ -1,15 +1,15 @@
-def fprime(numbers):
-    def primey(n):
-        if n <= 1:
+def f_prime(numbers):
+    def is_prime(number):
+        if number <= 1:
             return False
-        for i in range(2, n):
-            if n % i == 0:
+        for digit in range(2, number):
+            if number % digit == 0:
                 return False
         return True
     
     primes = []
     for num in numbers:
-        if primey(num):
+        if is_prime(num):
             primes.append(num)
     return primes
 
