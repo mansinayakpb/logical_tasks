@@ -9,6 +9,4 @@ def cyclic(number):
     return number
 
 
-
-
 print(cyclic(number))
